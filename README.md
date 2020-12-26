@@ -1,2 +1,2 @@
 # good-badge
-Easy embed charity badges for your website
+Embed links for charities you support
