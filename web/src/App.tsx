@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { makeStyles, Typography } from '@material-ui/core'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    textAlign: 'center',
+    padding: theme.spacing(4),
+  },
+}))
 
 function App() {
+  const classes = useStyles()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <Typography variant="h2">Good Badge</Typography>
+      <Typography variant="subtitle1">
+        Embed links for charities you support
+      </Typography>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
